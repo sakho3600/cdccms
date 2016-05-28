@@ -116,6 +116,6 @@ foreach ($categories as $cat){
 <div>
 <h2><?php if (file_exists('contact.dat')){echo unserialize(file_get_contents('contact.dat')) ;}?></h2>
 </div>
-Site réalisé avec <a href="https://gtihub.com/shangril/cdccms">CdC CMS</a>
+Site réalisé avec <a href="https://github.com/shangril/cdccms">CdC CMS</a>
 </body>
 </html>
