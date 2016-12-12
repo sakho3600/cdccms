@@ -2,7 +2,7 @@
 include ('menu.php');
 include ('files.php');
 if (!file_exists('categories.dat')){echo 'Aucune categorie pour le moment !';include ('footer.php');die();}
-$cats=read("categories.dat");
+$cats=unserialize(file_get_contents("categories.dat"));
 if (count($cats)==0){echo 'Aucune categorie pour le moment !';include ('footer.php');die();}
 
 foreach ($cats as $cat)
